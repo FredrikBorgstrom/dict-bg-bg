@@ -110,4 +110,4 @@ def expand_dictionary(aff_dic_prefix: str, output_file: str) -> None:
 
 
 if __name__ == '__main__':
-    expand_dictionary('index', 'words_bg-BG.txt')
+    import os; os.makedirs('output', exist_ok=True); expand_dictionary('index', 'output/bulgarian_bg_bg_bgoffice.txt')
